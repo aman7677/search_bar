@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a0bfd3c519.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    html{
+        font-size: 10px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        cursor: pointer;
+        height:6rem ;
+        width: 100%;
+        box-shadow: #341d49;
+        background-color: #5fabb5;
+        }
+     
+    .d1{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        gap: 3rem;
+        margin-right: 4rem;
+        
+    }
+    
+    /* ====navigation==== */
+    nav{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1vw;
+        box-shadow: 2px 2px 10px rgb(0,0,0,0.15);
+        align-items: center;
+        height: 5rem;
+        background-color:bisque;
+        
+        
+    }
+     
+    nav .navigation ul{
+        display: flex;
+        justify-content:flex-end ;
+        align-items: center;
+        margin-right: 70px;
+    }
+    nav .navigation ul li{
+       list-style: none; 
+       margin-left: 70px;
+       align-items: center;
+    }
+    nav .navigation ul li a{
+        text-decoration: none;
+        color: #7418cb;
+        font-size: 15px;
+        font-weight: 300;
+        transition: 0.3s;
+        position: relative;
+        align-items: center;
+    }
+    nav .navigation ul li a:before{
+        content: "";
+        position: absolute;
+        left:0;
+        top:100%;
+        width: 0;
+        height:2px;
+        background-color: #121011;
+        transition: all 0.5s linear;
+    }
+    nav .navigation ul li a:hover::before{
+        width: 100%;
+    }
+    nav .navigation ul li a:hover{
+       color: #ef0a0a;
+       
+    }
+
+    footer{
+        width: 100%;
+        position:absolute;
+        bottom:0;
+        background: linear-gradient(to right,#00093c,#2d0b00);
+        color: white;
+        padding: 100px 0 30px;
+        border-top-left-radius: 120px;
+        font-size: 14px;
+        line-height: 30px;
+        
+    }
+    .row{
+        padding-left: 3rem;
+        padding-right: 8rem;
+        line-height: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+        
+    }
+
+    
+    
+     
+    
+</style>
+<body>
+
+    <header>
+        <img src="D:\Aman\Portfolio\IMAGES\wizard3.png" alt="wizard" style="float:left;">
+
+        <div class="d1" style="float: right; position: relative; top:10px;">
+        <h2 class="con"><i class="fa fa-user" style="font-size:24px"></i>  Center Login</h2>
+        <h2 class="stu"><i class="fa fa-sign-in" style="font-size:24px"></i>  Student Login</h2>
+         
+    </div>
+    </header>
+
+    <!-- ====nav==== -->
+    <nav>
+        <div class="navigation">
+            <ul>
+                <li><a href="#"><b>HOME</b></a></li>
+
+                <li><a href="#"><b>ABOUT US</b></a>
+                    
+                <!-- <ul>
+                    <li><a href="#">Company Profile</a></li>
+                    <li><a href="#">Chairman's Message</a></li>
+                    <li><a href="#">Mission & Vision</a></li>
+                    <li><a href="#">Certificate of incorporation</a></li>
+                    <li><a href="#">ISO 9001:2015 Certificate</a></li>
+                    <li><a href="#">Corporate Members</a></li>
+                
+                </ul> -->
+                </li>
+
+                <li><a href="#"><b>COURSE</b></a>
+                <!-- <ul>
+                    <li><a href="#">Computer Courses</a></li>
+                  <li><a href="#">Communication & Personality Development(CPD)</a></li>
+                  <li><a href="#">Kids Program</a></li>
+                  <li><a href="#">Typing Program</a></li>
+                </ul>
+                </li> -->
+
+
+                <li><a href="#"><b>STUDENT ZONE</b></a>
+                <!-- <ul>
+                    <li><a href="#">Admission Verification</a></li>
+                  <li><a href="#">Certification Verification</a></li>
+                  <li><a href="#">Mark Sheet Verification</a></li>
+                  <li><a href="#">Typing Certificate Verification</a></li>
+                </ul>
+                </li> -->
+
+
+                <li><a href="#"><b>WTCA ZONE</b></a>
+                <!-- <ul>
+                    <li><a href="#">Certificate Sample</a></li>
+                  <li><a href="#">Mark Sheet Sample</a></li>
+                  <li><a href="#">i-card Sample</a></li>
+                  <li><a href="#">Study Materials</a></li>
+                </ul>
+                </li> -->
+
+
+                <li><a href="#"><b>PROJECTS</b></a>
+                <!-- <ul>
+                    <li><a href="#">BSDM-KYP Center</a></li>
+                  <li><a href="#">NIELT-CCC</a></li>
+                  <li><a href="#">NIELT-CCC</a></li>
+                  <li><a href="#">NIELT-CCAC</a></li>
+                  <li><a href="#">NULM-BIHAR</a></li>
+                  <li><a href="#">NULM-JHARKHAND</a></li>
+                  <li><a href="#">NSDC</a></li>
+                  <li><a href="#">ESDM/TSSC</a></li>
+                </ul>
+                </li> -->
+
+
+                <li><a href="#"><b>STUDY CENTER</b></a>
+                <!-- <ul>
+                    <li><a href="#">NEW FRANCHISEE</a></li>
+                  <li><a href="#">AUTHORITY STUDY CENTER</a></li>
+                </ul>
+                </li> -->
+
+                <li><a href="#"><b>GALLERY</b></a></li>
+                <li><a href="#"><b>CONTACT US</b></a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <footer>
+        <div class="row">
+             <div class="col"><b><u>REGISTERED OFFICE</u></b><br><br>
+             <h2 style="font-size: 10px;">WIZARD-TECH COMPUTER ACADEMY PVT.LTD.</h2>
+             <p><i class="PARA"></i>7A/73,S/F Plot No.3 & 4, Pvt Office 204
+                <br>Main Road Guru Nanak Pura, Delhi -110092</p>
+            </div>
+
+             <div class="col"><b><u>CORPORATE OFFICE</u></b><br><br>
+              <h2 style="font-size: 10px;">WIZARD-TECH COMPUTER<br>ACADEMY PVT.LTD.</h2>
+              <p><i class="PARA"></i>Salempur, Lah Bazar, Chapra - 841301</p>
+
+            </div>
+
+             <div class="col"><b><u>REGIONAL OFFICE</u></b><br><br>
+            <h2 style="font-size: 10px;">WIZARD-TECH COMPUTER <br>ACADEMY PVT.LTD.</h2>
+            <P><i class="PARA"></i>3rd Floor, Pal Bhawan,<br> Opp. Pillar No. 4,Bailey Road Patna-800014</P>
+        
+        </div>
+             <div class="social icons"><b><u>Social Connect</u></b><br><br>
+                <i class="fa-brands fa-facebook fa-beat"></i>
+                <i class="fa-brands fa-youtube fa-beat"></i>
+                <i class="fa-brands fa-twitter fa-beat"></i>
+                <i class="fa-brands fa-linkedin fa-beat"></i>
+                <i class="fa-brands fa-instagram fa-beat"></i>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
